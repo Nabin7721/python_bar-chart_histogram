@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+
+# Sample data for the bar chart
+categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5']
+values = [20, 35, 30, 25, 40]
+
+# Sample data for the histogram
+data = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+
+# Plotting the bar chart
+plt.figure(figsize=(8, 6))  # Set the size of the figure
+plt.bar(categories, values, color='skyblue')  # Create the bar chart
+plt.title('Bar Chart')  # Add title to the plot
+plt.xlabel('Categories')  # Add label to the x-axis
+plt.ylabel('Values')  # Add label to the y-axis
+plt.grid(True)  # Add grid lines
+plt.show()  # Display the plot
+
+# Plotting the histogram
+plt.figure(figsize=(8, 6))  # Set the size of the figure
+plt.hist(data, bins=5, color='lightgreen', edgecolor='black')  # Create the histogram
+plt.title('Histogram')  # Add title to the plot
+plt.xlabel('Bins')  # Add label to the x-axis
+plt.ylabel('Frequency')  # Add label to the y-axis
+plt.grid(True)  # Add grid lines
+plt.show()  # Display the plot
